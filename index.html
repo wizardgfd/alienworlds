@@ -17,7 +17,7 @@
             overflow: hidden;
 		}
         #canvasArea {
-		height: 0%;
+		
             margin-left: auto;
             margin-right: auto;
             overflow: hidden;
@@ -113,15 +113,7 @@
 
 var seconds= 0;
 function myFun(){
-	
-	//document.getElementById("text").style.width= '0px';
-	document.getElementById("canvasArea").style.height = '100%';
-}
-
-function myFun2(){
-}
-
-    (function starGame() {
+	(function starGame() {
         //Initialization
         var game = new gdjs.RuntimeGame(gdjs.projectData, {});
 
@@ -136,6 +128,12 @@ function myFun2(){
             game.startGameLoop();
         });
     })();
+}
+
+function myFun2(){
+}
+
+    
 
 	</script>
 </body>
