@@ -104,9 +104,20 @@
 
 </head>
 <body onload="setTimeout(myFun, 10000)">
-
+	<p id = "demo">text</p>
+	<div id="text">text</div>
     
 	<script>
+		var startTime, endTime;
+
+var seconds= 0;
+function myFun(){
+	
+	document.getElementById("text").style.width= '0px';
+}
+
+function myFun2(){
+}
 
     (function() {
         //Initialization
@@ -127,3 +138,4 @@
 	</script>
 </body>
 </html>
+
