@@ -112,6 +112,11 @@
 		var startTime, endTime;
 
 var seconds= 0;
+		
+		//Load all assets and start the game
+        game.loadAllAssets(function() {
+            game.startGameLoop();
+        });
 function myFun(){
 	(function starGame() {
         //Initialization
@@ -123,10 +128,7 @@ function myFun(){
         //Bind keyboards/mouse/touch events
         game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
 
-        //Load all assets and start the game
-        game.loadAllAssets(function() {
-            game.startGameLoop();
-        });
+        
     })();
 }
 
