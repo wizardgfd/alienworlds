@@ -17,6 +17,7 @@
             overflow: hidden;
 		}
         #canvasArea {
+		height: 0%;
             margin-left: auto;
             margin-right: auto;
             overflow: hidden;
@@ -113,7 +114,8 @@
 var seconds= 0;
 function myFun(){
 	
-	document.getElementById("text").style.width= '0px';
+	//document.getElementById("text").style.width= '0px';
+	document.getElementById("canvasArea").style.height = '100%';
 }
 
 function myFun2(){
